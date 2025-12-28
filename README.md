@@ -1,11 +1,11 @@
-## Pozdrav 👋
+## 👋 Pozdravljam Vas. Zovem se: 
 
 # Nedim Bosnić
 
 **System Engineer | Linux & Windows administracija | IT sigurnost | Virtualizacija | Database Administration**
 
 Bavim se administracijom i održavanjem IT sistema, mreža i operativnih sistema, uz fokus na stabilnost, sigurnost i pouzdan backup. 
-Ovdje dijelim tehničke bilješke, check-liste, procedure i anonimizirane primjere konfiguracija.
+Ovdje ću dijeliti tehničke bilješke, check-liste, procedure i anonimizirane primjere konfiguracija.
 
 ---
 
@@ -22,7 +22,7 @@ Ovdje dijelim tehničke bilješke, check-liste, procedure i anonimizirane primje
 
 ## Šta možeš naći na mom GitHubu
 
-- `linux-security-hardening` – check-liste i primjeri za sigurnosno očvršćavanje
+- `linux-security-hardening` – check-liste i primjeri za sigurnosna poboljšanja
 - `backup-and-recovery` – procedure i skripte za backup i restore test
 - `it-knowledge-base` – bilješke iz prakse (troubleshooting, best practices)
 
