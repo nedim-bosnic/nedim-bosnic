@@ -1,0 +1,127 @@
+# =========================================================
+# Sysadmin / Security repo .gitignore
+# Cilj: spriječiti slučajno commit-anje tajni, dump-ova, logova i backup-a
+# =========================================================
+
+# --- Secrets / credentials ---
+*.env
+*.env.*
+.envrc
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
+*_rsa
+*_dsa
+*_ecdsa
+*_ed25519
+authorized_keys
+known_hosts
+*.kdbx
+*.gpg
+*.asc
+*.pgp
+*.token
+*token*
+*secret*
+*secrets*
+*apikey*
+*api_key*
+*password*
+*passwd*
+*credentials*
+
+# --- SSH / VPN / RDP configs ---
+*.ovpn
+*.rdp
+*.ppk
+wireguard/*.conf
+wg*.conf
+
+# --- OS / editor noise ---
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*.bak
+*.tmp
+*.temp
+*.old
+*~
+
+.vscode/
+.idea/
+*.code-workspace
+
+# --- Logs (NE commit-ati realne logove) ---
+*.log
+logs/
+log/
+**/log/
+**/logs/
+
+# --- Dumps / exports / captures ---
+*.pcap
+*.pcapng
+*.cap
+*.dump
+*.sql
+*.sqlite
+*.db
+*.mdb
+*.ldf
+*.bak
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.7z
+*.rar
+*.img
+*.iso
+*.vhd
+*.vhdx
+*.vmdk
+*.qcow2
+
+# --- Reports that may contain sensitive info ---
+*report*
+*incident*
+*forensics*
+*inventory*
+*asset*
+*customers*
+*client*
+
+# --- Certificates (public certs can be committed, private keys must not) ---
+*.crt
+*.cer
+*.der
+# Ako želiš commit-ati javne certove, izbriši linije iznad
+# a ostavi samo *.key/*.pem ignorisanje.
+
+# --- System specific outputs ---
+core
+*.core
+
+# --- Safety: ignore any "real" configs; use *.example instead ---
+*sshd_config
+*jail.local
+*nftables.conf
+*docker-compose.yml
+*nginx.conf
+*apache2.conf
+
+# Allow example templates explicitly
+!**/*.example
+!**/*.md
+!**/*.txt
+!**/*.conf.example
+!**/*.yml.example
